@@ -43,7 +43,7 @@ useEffect(() => {
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
-              type="emial"
+              type="email"
               id="email"
               name="email"
               placeholder="Enter email address "

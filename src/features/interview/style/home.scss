@@ -121,6 +121,20 @@ $font-stack:
       display: none;
     }
   }
+
+    
+  &--left {
+    right: auto;
+    left: 20px;
+
+    @media (max-width: 768px) {
+      left: 12px;
+    }
+
+    @media (max-width: 480px) {
+      left: 8px;
+    }
+  }
 }
 
 // ── Page Header ──────────────────────────────────────────────────────────────
