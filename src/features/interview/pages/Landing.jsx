@@ -31,10 +31,12 @@ const Landing = () => {
     const checkAuth = async () => {
       try {
        const data = await getMe();
-       console.log("GET ME SUCCESS",data);
+      if(data?.user){
         setIsLoggedIn(true);
+      }else{
+        setIsLoggedIn(false);
+      }
       } catch (err) {
-        console.log("GET ME ERROR",err);
         setIsLoggedIn(false);
       }
     };
