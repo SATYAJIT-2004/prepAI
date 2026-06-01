@@ -30,9 +30,11 @@ const Landing = () => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        await getMe();
+       const data = await getMe();
+       console.log("GET ME SUCCESS",data);
         setIsLoggedIn(true);
       } catch (err) {
+        console.log("GET ME ERROR",err);
         setIsLoggedIn(false);
       }
     };
